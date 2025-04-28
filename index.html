@@ -48,7 +48,7 @@
 
         .section-title {
             text-align: center;
-            margin-bottom: 1.0rem;
+            margin-bottom: 1rem;
             color: #2c3e50;
         }
 
@@ -90,7 +90,7 @@
         }
 
         .timeline-item {
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             position: relative;
             padding: 1.5rem;
             background: white;
@@ -113,18 +113,59 @@
         .contact-links {
             display: flex;
             justify-content: center;
-            gap: 2rem;
             margin-top: 2rem;
         }
 
         .contact-links a {
             color: #2c3e50;
-            font-size: 2rem;
+            font-size: 40px;
+            margin-bottom: -1rem;
             transition: color 0.3s ease;
+            
         }
-
+    
         .contact-links a:hover {
             color: #3498db;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+            max-width: 385px;
+            margin: 0.1rem auto;
+        }
+
+        .contact-form input{
+            padding: 0.8rem;
+            border: 2px solid #ccc;
+            border-radius: 7px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1rem;
+            color: #333;
+        }
+        .contact-form textarea {
+            padding: 0.8rem;
+            border: 2px solid #ccc;
+            border-radius: 7px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .contact-form button {
+            background: #2c3e50;
+            color: white;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #3498db;
         }
 
         /* Responsive Design */
@@ -213,9 +254,19 @@
         </div>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title"><u></u>Connect With Me</u></h2>
+    <section id="contact-form">
+        <div class="container-form">
+            <h2 class="section-title"><u>Connect With Me</u></h2>
+            <form action="https://formspree.io/f/your-id" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required style="width: 230px;">
+                <input type="email" name="email" placeholder="Your Email" required style="width: 300px;">
+                <textarea name="message" placeholder="Your Message" rows="5" cols="35" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        
+    <section id="contact-links"
+        <div class="container-links">
+            <h2 class="section-title"><u>Connect With Me</u></h2>
             <div class="contact-links">
                 <a href="https://www.instagram.com/manish_barui" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.facebook.com/manish.barui01" target="_blank"><i class="fab fa-facebook"></i></a>
