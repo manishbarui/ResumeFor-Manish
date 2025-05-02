@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manish Barui - Professional Portfolio</title>
+    <title>Manish Barui- Professional Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         * {
@@ -21,7 +21,7 @@
 
         .container {
             max-width: 385px;
-            margin: 0 auto;
+            margin: -15px auto;
             padding: 0 20px;
         }
 
@@ -34,8 +34,8 @@
         }
 
         .profile-img {
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px; 
             border-radius: 50%;
             margin-bottom: 0.1rem;
             border: 0.8px solid white;
@@ -51,6 +51,28 @@
             margin-bottom: 1rem;
             color: #2c3e50;
         }
+   
+        .fas.fa-code {
+          font-size: 30px;
+           color: #3b82f6;
+        }
+  
+        .fas.fa-terminal {
+          font-size: 30px;
+           color: #22c55e;
+        }
+  
+        .fas.fa-graduation-cap {
+          font-size: 30px;
+           color: #a855f7;
+        }
+  
+        .smaller-word {
+           font-size: 0.85rem;
+           font-weight: 400;
+           color: gray;
+           font-style: italic;
+        }
 
         .section-title u {
             text-decoration-color: #3498db;
@@ -63,7 +85,7 @@
             margin: 0 auto;
             padding: 1.0rem;
             border-radius: 5px;
-            box-shadow: 0 2px 5px 2px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
         }
 
         /* Skills Section */
@@ -78,7 +100,7 @@
             background: white;
             padding: 1.5rem;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 5px rgba(0,0,0,0.2);
             text-align: center;
         }
 
@@ -95,7 +117,7 @@
             padding: 1.5rem;
             background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 5px rgba(0,0,0,0.2);
         }
 
         .timeline-item::before {
@@ -136,7 +158,10 @@
             padding: 1rem; 
             border-radius: 15px; 
             margin: -10px 10px auto;
-            background-color: #f0f0f0;
+            color: #333333; 
+            background-color: #f6f5f5;
+            box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.32), inset 0px -2px 6px -1px rgba(0, 0, 0, 0.3);
+            position: relative;
         } 
 
         .contact-form input{
@@ -214,14 +239,17 @@
             <h2 class="section-title"><u>Technical Proficiencies</u></h2>
             <div class="skills-grid">
                 <div class="skill-card">
+              <h1><i class="fas fa-code"></i></h1> 
                     <h3>Web Development</h3>
                     <p>HTML5, CSS3</p>
                 </div>
                 <div class="skill-card">
+              <h1><i class="fas fa-terminal"></i></h1>
                     <h3>Programming</h3>
                     <p>Python</p>
                 </div>
                 <div class="skill-card">
+              <h1><i class="fas fa-graduation-cap"></i></h1>
                     <h3>Academic Pursuits</h3>
                     <p>Political Science, Computer Sciences</p>
                 </div>
@@ -235,10 +263,12 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <h3>Academic Projects</h3>
+                    <span class="smaller-word">Ongoing</span>
                     <p>Developed multiple web-based projects using HTML/CSS and Python implementations</p>
                 </div>
                 <div class="timeline-item">
                     <h3>Skill Development</h3>
+                    <span class="smaller-word">Continuous</span>
                     <p>Consistently enhancing technical capabilities through personal projects and self-study</p>
                 </div>
             </div>
